@@ -1,0 +1,10 @@
+.UserOutput {
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    margin: 30px auto;
+    border: 1px dashed greenyellow;
+    box-shadow: 0 2px 2px gray;
+    background: lightcyan;
+    padding: 25px;
+    text-align: center;
+}
