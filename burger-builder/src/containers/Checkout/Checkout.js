@@ -11,6 +11,7 @@ class Checkout extends Component {
     }
 
     componentWillMount() {
+        console.log(this.props.match.path);
         const query = new URLSearchParams(this.props.location.search);
         const ingredients = {};
         let price = 0;
@@ -30,7 +31,7 @@ class Checkout extends Component {
     }
 
     checkoutContinuedHandler = () => {
-        this.props.history.replace('checkout/contact-data');
+        this.props.history.replace(this.props.match.path + '/contact-data');
     }
 
     render() {
